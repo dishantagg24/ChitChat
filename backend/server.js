@@ -12,10 +12,6 @@ app.use(express.json());
 
 app.use('/api/user', userRoutes);
 
-app.use('/', (req, res) => {
-    res.send("Hello World");
-})
-
 const PORT = 8000 || process.env.PORT;
 
 app.listen(PORT, () => {
